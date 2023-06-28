@@ -10,11 +10,8 @@
 
 ### 考察
 
-2^(5\*n) ごとに分割: 1178,70,495,40,406,51,3734,72,1896,75,
-2^n ごとに分割: 813,70,501,40,256,51,753,72,437,75,
-
 | 分割 | Challenge #1 || Challenge #2 || Challenge #3 || Challenge #4 ||Challenge #5 ||
-| | Time [ms]| Utilization [%] | Time [ms]| Utilization [%] | Time [ms]| Utilization [%] | Time [ms]| Utilization [%] | Time [ms]| Utilization [%] |
 | :---: | :---: |:---: | :---: |:---: | :---: |:---: | :---: |:---: | :---: |:---: |
+| | Time [ms]| Utilization [%] | Time [ms]| Utilization [%] | Time [ms]| Utilization [%] | Time [ms]| Utilization [%] | Time [ms]| Utilization [%] |
 | $2^{5n}$ ごと | 1178 | 70 | 495 | 40 | 406 | 51 | 3734 | 72 | 1896 | 75 |
 | $2^n$ ごと | 813 | 70 | 501 | 40 | 256 | 51 | 753 | 72 | 437 | 75 |
