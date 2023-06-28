@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define FREE_LIST_BIN_NUM 12 // 2^12 = 4096 > 4000
+#define FREE_LIST_BIN_NUM 12 // 2^12 = 4096 > 4000 = max object size
 
 //
 // Interfaces to get memory pages from OS
