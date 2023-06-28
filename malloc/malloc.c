@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define FREE_LIST_BIN_NUM 3
+#define FREE_LIST_BIN_NUM 12 // 2^12 = 4096 > 4000
 
 //
 // Interfaces to get memory pages from OS
@@ -49,13 +49,10 @@ my_heap_t my_heap[FREE_LIST_BIN_NUM];
 
 size_t my_get_index(size_t size)
 {
-    // 1~32->0, 33~1024->1, 1025~->2
     size_t index = 0;
-    if (size > 32) {
-        index = 1;
-    }
-    if (size > 1024) {
-        index = 2;
+    size_t tmp = size;
+    while (tmp >>= 1) {
+        index++;
     }
     return index;
 }
